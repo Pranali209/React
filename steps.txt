@@ -1,0 +1,37 @@
+npm create vite@latest
+npm install
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+imp links 
+
+"./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}"
+https://www.tiny.cloud/docs/integrations/react/
+https://tailwindcss.com/docs/guides/vite
+Packages we need to install to work with BLogAll we can see that it has installed or no 
+in Package.json file: under dependencies
+npm install appwrite@13.0.2 - installing appwrite
+npm intall @tinymce/tinymce-react - for using  tiny mce editor in react
+npm i react-hook-form - for  creating forms and handling data
+npm i html-react-parser - for  parsing HTML to React
+
+to install react-router  -  npm install react-router-dom
+
+### To start with the project
+1. create the file  by name .env in the source of the react app folder
+2. create a config.js file and import all the en variables by using (import.meta.env)
+3. creating a service - we craete a services bcoz to make ur site independent of the backend , which means
+                        now we are using appwrite as a backendservice but maybe going further we want to use 
+                        something else  so  we just have to change the service file without changing anything
+                1. Creating a folder by name by the name of the backend service (folder name can be anything)
+                2. Inside it create a file follow the docs of the backend service which ur using to understand more
+4. creating one more service - we create this service to create , update, delete Post and also to upload a file and delete file
+5.Setting up a store and slice files 
+6.Desigining the components.
+7.Desigining the RTE module where we use controller to control the third party compomonents
+8.Design the PostForm  which pass the values to RTE component and check whether the post is der or we need to create one
+ 
+
