@@ -12,6 +12,10 @@ import AllPost from './Pages/AllPost.jsx'
 import store from './store/store.js'
 import EditPost from './Pages/EditPost.jsx'
 import Post from './Pages/Post.jsx'
+import { useSelector } from 'react-redux'
+
+
+
 const router = createBrowserRouter(
  [{
   path: '/',
@@ -19,8 +23,8 @@ const router = createBrowserRouter(
         children:[
           {
             path:"/",
-            
-            element :<Home />
+             element : <Home /> 
+           
           },
           {
             path: "/login",
@@ -41,15 +45,15 @@ const router = createBrowserRouter(
           {
             path : "/add-post",
             element: (
-             
+               
                   <AddPost />
-           
+       
           ),
           },{
             path : "/all-posts",
             element: (
-             
-                  <AllPost />
+              <AllPost />
+                
              
           ),
           },

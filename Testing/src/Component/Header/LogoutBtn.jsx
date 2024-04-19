@@ -4,8 +4,10 @@ import authservice from '../../Appwrite/Auth'
 import { Logout as storeLogout } from '../../store/AuthSlice'
 function LogoutBtn() {
     const dispatch = useDispatch()
+    
     const handleSubmit = () => {
-        authservice.LogOut().then(() => {
+        authservice.LogOut().then((post) => {
+            console.log(post , "Logged out");
             dispatch(storeLogout())
         })
        

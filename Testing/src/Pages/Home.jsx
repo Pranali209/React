@@ -3,19 +3,21 @@ import service from '../Appwrite/Upload&Post'
 import { useState, useEffect } from 'react'
 import { Container, PostCard , Button } from '../Component/index'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Home() {
     const [posts, setPosts] = useState([])
-
+    const loggedIn = useSelector((state) => state.auth.status)
     useEffect(() => {
         service.GetAllPosts().then((posts) => {
             if (posts) {
+
                 setPosts(posts.documents)
             }
         })
     }, [])
 
-    if (posts.length === 0) {
+    if (loggedIn) {
         return (
             <div className="w-full py-8 mt-4 text-center">
                 <Container>
