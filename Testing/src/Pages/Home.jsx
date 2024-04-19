@@ -17,7 +17,7 @@ function Home() {
         })
     }, [])
 
-    if (loggedIn) {
+    if (!loggedIn) {
         return (
             <div className="w-full py-8 mt-4 text-center">
                 <Container>
@@ -28,8 +28,7 @@ function Home() {
                                 <p className="text-lg p-2">Thoughts, Stories, and More</p>
                                 <Link to={'/login'}>
                                 <Button className='bg-blue-950 p-2 duration-200 hover:bg-blue-700 rounded-md'>Get Started</Button>
-                                </Link>
-                               
+                                </Link>                           
                             </header>
                         </div>
                     </div>
