@@ -20,9 +20,9 @@ function Login() {
            
             if (session) {
                 const userData = await authService.getCurrentUser()
-              console.log(  userData , "userdata in login ");
+            
                 if(userData) {
-                    alert("data")
+                 
                     dispatch(authLogin(userData));
                 }
                 navigate("/")
@@ -43,6 +43,7 @@ function Login() {
                     </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">Sign in to your account</h2>
+        
         <p className="mt-2 text-center text-base text-black/60">
                     Don&apos;t have any account?&nbsp;
                     <Link

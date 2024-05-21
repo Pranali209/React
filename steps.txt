@@ -17,7 +17,8 @@ npm install appwrite@13.0.2 - installing appwrite
 npm intall @tinymce/tinymce-react - for using  tiny mce editor in react
 npm i react-hook-form - for  creating forms and handling data
 npm i html-react-parser - for  parsing HTML to React
-
+ npm install @reduxjs/toolkit - for redux 
+ npm install react-redux -  react binding
 to install react-router  -  npm install react-router-dom
 
 ### To start with the project
@@ -33,5 +34,7 @@ to install react-router  -  npm install react-router-dom
 6.Desigining the components.
 7.Desigining the RTE module where we use controller to control the third party compomonents
 8.Design the PostForm  which pass the values to RTE component and check whether the post is der or we need to create one
+ 
+
  
 

@@ -11,11 +11,11 @@ const authSlice = createSlice({
     reducers:{
     Login : (state ,action)=>{
          console.log(action , "action in slice " );
-           state.status = "true" ,
+           state.status = true ,
            state.userdata = action.payload
     },
     Logout:(state)=>{
-        state.status = "false" ,
+        state.status = false ,
         state.userdata = null
     }
 

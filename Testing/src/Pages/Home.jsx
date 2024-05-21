@@ -37,6 +37,7 @@ function Home() {
         )
     }
     return (
+        loggedIn  ?
         <div className='w-full py-8'>
             <Container>
                 <div className='flex flex-wrap'>
@@ -47,7 +48,7 @@ function Home() {
                     ))}
                 </div>
             </Container>
-        </div>
+        </div> : null
     )
 }
 
